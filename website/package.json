@@ -6,7 +6,8 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "test": "npm run-script build"
   },
   "devDependencies": {
     "docusaurus": "^1.9.0"
@@ -30,6 +31,5 @@
   "bugs": {
     "url": "https://github.com/rubyonracetracks/tutorial-docker-buster-docu/issues"
   },
-  "homepage": "https://github.com/rubyonracetracks/tutorial-docker-buster-docu#readme",
-  "test": "npm run-script build"
+  "homepage": "https://github.com/rubyonracetracks/tutorial-docker-buster-docu#readme"
 }
