@@ -10,5 +10,26 @@
   },
   "devDependencies": {
     "docusaurus": "^1.9.0"
-  }
+  },
+  "name": "tutorial-docker-buster-docu",
+  "description": "This website was created with [Docusaurus](https://docusaurus.io/).",
+  "version": "1.0.0",
+  "main": "siteConfig.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubyonracetracks/tutorial-docker-buster-docu.git"
+  },
+  "keywords": [
+    "Docker",
+    "Debian",
+    "Tutorial"
+  ],
+  "author": "Jason Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubyonracetracks/tutorial-docker-buster-docu/issues"
+  },
+  "homepage": "https://github.com/rubyonracetracks/tutorial-docker-buster-docu#readme",
+  "test": "npm run-script build"
 }
