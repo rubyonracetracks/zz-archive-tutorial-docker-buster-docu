@@ -8,47 +8,32 @@
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
-
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-function Help(props) {
-  const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
-  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+const siteConfig = require(process.cwd() + '/siteConfig.js');
 
-  const supportLinks = [
-    {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
-      )})`,
-      title: 'Browse Docs',
-    },
-    {
-      content: 'Ask questions about the documentation and project',
-      title: 'Join the community',
-    },
-    {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
-    },
-  ];
+function docUrl(doc, language) {
+  return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
+}
 
-  return (
-    <div className="docMainWrapper wrapper">
-      <Container className="mainContainer documentContainer postContainer">
-        <div className="post">
-          <header className="postHeader">
-            <h1>Need help?</h1>
-          </header>
-          <p>This project is maintained by a dedicated group of people.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
-        </div>
-      </Container>
-    </div>
-  );
+class Help extends React.Component {
+  render() {
+    let language = this.props.language || '';
+
+    return (
+      <div className="docMainWrapper wrapper">
+        <Container className="mainContainer documentContainer postContainer">
+          <div className="post">
+            <header className="postHeader">
+              <h1>Help</h1>
+              Help is available on the <a href="https://www.rubyonracetracks.com/help.html">Ruby on Racetracks</a> help page.
+            </header>
+          </div>
+        </Container>
+      </div>
+    );
+  }
 }
 
 module.exports = Help;
