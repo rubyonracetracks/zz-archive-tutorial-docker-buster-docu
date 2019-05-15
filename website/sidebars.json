@@ -1,7 +1,6 @@
 {
   "docs": {
 	"Unit 1: Basic Building Blocks": ["01-01"],
-    "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
   "docs-other": {
