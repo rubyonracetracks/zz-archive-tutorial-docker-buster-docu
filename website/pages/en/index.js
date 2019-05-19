@@ -78,24 +78,22 @@ class Index extends React.Component {
       </Container>
     );
 
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Description />
+          <Container padding={['bottom', 'top']} background="dark">
+          Welcome to the Different Docker Tutorial!  This is a <a href="https://www.rubyonracetracks.com/">Ruby on Racetracks</a> web site.  Follow the tutorial to learn the special Ruby on Racetracks spin on Docker.
+
+          <h2>Shortcut</h2>
+          If you just want to install Ruby on Rails right now, these are the chapters you should go through:
+            <ul>
+            <li><a href="docs/01-01.html">Prerequisites</a></li>
+            <li><a href="docs/01-02.html">Installing Docker</a></li>
+            <li><a href="docs/01-03.html">Installing the Minimal Stage 1 Docker image</a></li>
+            <li><a href="docs/03-01.html">Installing the general Ruby on Rails Docker image</a></li>
+            </ul>
+          </Container>
         </div>
       </div>
     );
