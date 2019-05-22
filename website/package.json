@@ -10,7 +10,7 @@
     "test": "npm run-script build"
   },
   "devDependencies": {
-    "docusaurus": "^1.9.0"
+    "docusaurus": "^1.10.0"
   },
   "name": "tutorial-docker-buster-docu",
   "description": "This website was created with [Docusaurus](https://docusaurus.io/).",
